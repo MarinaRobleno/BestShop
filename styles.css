@@ -1,3 +1,13 @@
+html{
+    top: 0px;
+    left: 0px;
+    width: 375px;
+    height: 4679px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px -5px 80px #00000029;
+    opacity: 1;
+}
+
 .ActiveLinkBorder{
     position: fixed;
     display: flex;
@@ -9,7 +19,7 @@
     box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
     align-items: center;
-    z-index: 1;
+    z-index: 10;
 
 }
 
@@ -25,10 +35,12 @@
     opacity: 1;
 }
 
+
+
 .OpeningSection{
     display: block;
     position: absolute;
-    top: 133px;
+    top: 170px;
     left: 33px;
     width: 310px;
     height: 213px;
@@ -48,7 +60,7 @@
 
 .OpeningSection h2{
     position: relative;
-    top: 0px;
+    top: 20px;
     width: 308px;
     height: 57px;
     text-align: center;
@@ -74,11 +86,37 @@
 }
 
 .background{
-    position: relative;
+    position: absolute;
     top: 434px;
     left: -201.5px;
     width: 779px;
     height: 267px;
     background: transparent url('Images/Background.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 1;
+}
+
+.Popular{
+    position: absolute;
+    top: 664px;
+    left: -0.00000762939453125px;
+    width: 375px;
+    height: 762px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px -5px 80px #00000029;
+    opacity: 1;
+    z-index: -1;
+}
+
+.Popular h1{
+    position: relative;
+    top: 13px;
+    left: 36px;
+    width: 303px;
+    height: 112px;
+    text-align: center;
+    font: normal normal normal 30px/35px Raleway;
+    letter-spacing: 0px;
+    color: #000000;
     opacity: 1;
 }
