@@ -120,3 +120,25 @@ html{
     color: #000000;
     opacity: 1;
 }
+
+.dailyentries{
+    position: absolute;
+    text-align: center;
+    top: 187px;
+    left: 130px;
+    width: 116px;
+    height: 140px;
+    opacity: 1;
+}
+
+.dailyentries .Person{
+    position: relative;
+    top: 3px;
+    left: 52px;
+    width: 44px;
+    height: 52px;
+    opacity: 1;
+}
+
+/*ELIPSE ROJA*/
+
