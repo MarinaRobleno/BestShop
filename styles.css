@@ -1,0 +1,31 @@
+html{
+    top: 0px;
+    left: 0px;
+    width: 375px;
+    height: 4679px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.ActiveLinkBorder{
+    position: fixed;
+    top: 0px;
+    left: 0.000244140625px;
+    width: 375px;
+    height: 70px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+}
+
+.ActiveLinkBorder h1{
+    top: 17px;
+    left: 25px;
+    width: 142px;
+    height: 37px;
+    text-align: left;
+    font: normal normal 300 32px/37px Raleway;
+    letter-spacing: 0px;
+    color: #08A6E4;
+    opacity: 1;
+}
