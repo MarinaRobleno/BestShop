@@ -1,4 +1,5 @@
 .ActiveLinkBorder{
+    position: fixed;
     display: flex;
     top: 0px;
     left: 0.000244140625px;
@@ -8,6 +9,7 @@
     box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
     align-items: center;
+    z-index: 1;
 
 }
 
@@ -24,11 +26,14 @@
 }
 
 .OpeningSection{
-    top: 170px;
+    display: block;
+    position: relative;
+    top: 100px;
     left: 33px;
     width: 310px;
     height: 213px;
     opacity: 1;
+    align-items: center;
 }
 
 .OpeningSection h1{
@@ -40,6 +45,10 @@
 }
 
 .OpeningSection h2{
+    top: 231px;
+    left: 35px;
+    width: 308px;
+    height: 57px;
     text-align: center;
     font: normal normal normal 16px/22px 'Open Sans';
     letter-spacing: 0px;
@@ -56,12 +65,18 @@
     box-shadow: 5px 10px 14px #07ACE629;
     border-radius: 40px;
     opacity: 1;
-}
-
-.OpeningSection h3 #ButtonText{
     text-align: center;
     font: normal normal bold 16px/22px 'Open Sans';
     letter-spacing: 0px;
     color: white;
+}
+
+.background{
+    position: relative;
+    margin-top: 51px;
+    left: -201.5px;
+    width: 779px;
+    height: 267px;
+    background: transparent url('Images/Background.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
