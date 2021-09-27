@@ -122,8 +122,8 @@ html{
 }
 
 .dailyentries{
-    position: absolute;
-    top: 187px;
+    position: relative;
+    top: 25px;
     left: 130px;
     width: 116px;
     height: 140px;
@@ -143,7 +143,7 @@ html{
 
 .dailyentries h4{
     position: relative;
-    bottom: 19.11px;
+    top: 21.89px;
     left: 0px;
     width: 116px;
     height: 24px;
@@ -156,14 +156,58 @@ html{
 }
 
 .dailyentries .entries{
-    display: flex row;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 19.11px;
+    left: 11.15px;
     width: 94px;
     height: 20px;
-    text-align: center;
     font: normal normal normal 17px/20px Raleway;
+    letter-spacing: 0px;
+    color: #A5A5A5;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.seenproducts{
+    position: absolute;
+    top: 352px;
+    left: 100px;
+    width: 176px;
+    height: 167px;
+    opacity: 1;
+}
+
+.seenproducts .Eye{
+    position: relative;
+    top: 14.25px;
+    left: 77.78px;
+    width: 65px;
+    height: 37px;
+    opacity: 1;
+}
+
+.seenproducts h4{
+    position: relative;
+    top: 25.25px;
+    left: 20px;
+    width: 116px;
+    height: 24px;
+    text-align: center;
+    font: normal normal 800 20px/24px Raleway;
+    letter-spacing: 5.96px;
+    color: #000000;
+    opacity: 1;
+
+}
+
+.seenproducts .products{
+    position: relative;
+    top: 19px;
+    left: 0px;
+    width: 176px;
+    height: 48px;
+    text-align: center;
+    font: normal normal normal 16px/19px Raleway;
     letter-spacing: 0px;
     color: #A5A5A5;
     opacity: 1;
