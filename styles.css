@@ -295,7 +295,7 @@ img{
     display: block;
     margin: 42px 22px 30px;
     text-align: left;
-    font: normal normal normal 14px/19px Open Sans;
+    font: normal normal normal 14px/19px 'Open Sans';
     letter-spacing: 0px;
 }
 
@@ -314,7 +314,7 @@ img{
     position: absolute;
     display: block;
     margin: 12px;
-    background: #08A6E4 0% 0% no-repeat padding-box;
+    background: #07ACE6 0% 0% no-repeat padding-box;
     width: 132px;
     height: 132px;
     border-radius: 50%;
@@ -343,6 +343,55 @@ img{
     display: block;
     margin: 18px 21px 25px;
     text-align: left;
-    font: normal normal normal 14px/19px Open Sans;
+    font: normal normal normal 14px/19px 'Open Sans';
     letter-spacing: 0px;
 }
+
+.advantages .advantage-3{
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    top: 41px;
+    width: 84%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+.advantage-3 .advantage-title{
+    display: block;
+    margin: 30px 22px 0px 22px;
+    text-align: left;
+    font: normal normal normal 30px/35px Raleway;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.advantage-3 .advantage-description{
+    display: block;
+    margin: 20px 21px 18px;
+    text-align: left;
+    font: normal normal normal 14px/19px 'Open Sans';
+    letter-spacing: 0px;
+}
+
+.advantage-3 .trumpet-background{
+    position: relative;
+    display:block;
+    z-index: 1;
+    width: 100%;
+    height: 195px;
+    background: #55DFB4 0% 0% no-repeat padding-box;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+.advantage-3 .trumpet{
+    position: absolute;
+    display: block;
+    z-index: 2;
+    max-width: 295.73px;
+
+}
+
+
