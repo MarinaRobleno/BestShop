@@ -97,7 +97,7 @@ img{
     text-align: center;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px -5px 80px #00000029;
-    z-index: -1;
+
 }
 
 .popular h1{
@@ -119,7 +119,7 @@ img{
 .daily-entries .ellipse{
     position: absolute;
     display: block;
-    margin: 0px 31.56px 0 21.73px;
+    margin: -3px 31.56px 0 21.73px;
     background: #FB3B64 0% 0% no-repeat padding-box;
     width: 62.71px;
     height: 62.71px;
@@ -127,6 +127,7 @@ img{
 }
 
 .daily-entries .person{
+    position: relative;
     display: block;
     width: 44px;
     height: 52px;
@@ -172,6 +173,7 @@ img{
 
 .seen-products .eye{
     display: block;
+    position: relative;
     margin: 39.25px 32.78px 25.25px 77.78px;
     width: 65px;
     height: 37px;
@@ -200,7 +202,7 @@ img{
     width: 163px;
     height: 168px;
     display: block;
-    margin: -25px auto 50px;
+    margin: -25px auto 0px;
 }
 
 .added-posts .ellipse{
@@ -215,6 +217,7 @@ img{
 
 .added-posts .catalog{
     display: block;
+    position: relative;
     margin: 31px 29px 22.94px 82px;
     width: 52px;
     height: 48px;
@@ -237,4 +240,59 @@ img{
     letter-spacing: 0px;
     color: #A5A5A5;
 
+}
+
+.advantages{
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+}
+
+.advantages .advantage-1{
+    display: block;
+    margin: 42px auto;
+    width: 84%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+.advantage-1 .ellipse{
+    position: absolute;
+    display: block;
+    margin-top: 20px;
+    left: 55%;
+    z-index: 0;
+    background: #FB3B64 0% 0% no-repeat padding-box;
+    width: 87px;
+    height: 87px;
+    border-radius: 42%;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+
+.advantage-1 .macbook{
+    position: relative;
+    width: 61.14%;
+    max-width: 192.76px;
+    z-index: 1;
+    display: block;
+    margin: 37.11px auto 26.96px;
+}
+
+.advantage-1 .advantage-title{
+    display: block;
+    margin: 0px 22px;
+    text-align: left;
+    font: normal normal normal 30px/35px Raleway;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.advantage-1 .advantage-description{
+    display: block;
+    margin: 42px 22px 30px;
+    text-align: left;
+    font: normal normal normal 14px/19px Open Sans;
+    letter-spacing: 0px;
 }
