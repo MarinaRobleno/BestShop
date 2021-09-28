@@ -93,7 +93,7 @@ img{
 
 .popular{
     display: block;
-    margin: 13px auto;
+    margin: 13px auto 0px;
     text-align: center;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px -5px 80px #00000029;
@@ -250,8 +250,10 @@ img{
 }
 
 .advantages .advantage-1{
+    position: relative;
     display: block;
-    margin: 42px auto;
+    margin: 0px auto 41px;
+    top: 42px;
     width: 84%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #E8E9ED;
@@ -292,6 +294,54 @@ img{
 .advantage-1 .advantage-description{
     display: block;
     margin: 42px 22px 30px;
+    text-align: left;
+    font: normal normal normal 14px/19px Open Sans;
+    letter-spacing: 0px;
+}
+
+.advantages .advantage-2{
+    position: relative;
+    display: block;
+    margin: 0px auto 41px;
+    top: 41px;
+    width: 84%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+.advantage-2 .ellipse{
+    position: absolute;
+    display: block;
+    margin: 12px;
+    background: #08A6E4 0% 0% no-repeat padding-box;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.advantage-2 .iphone{
+    position: relative;
+    width: 55.55%;
+    max-width: 175px;
+    z-index: 1;
+    display: block;
+    margin: 19.01px auto 26px;
+}
+
+.advantage-2 .advantage-title{
+    display: block;
+    margin: 0px auto 0px 22px;
+    text-align: left;
+    font: normal normal normal 30px/35px Raleway;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.advantage-2 .advantage-description{
+    display: block;
+    margin: 18px 21px 25px;
     text-align: left;
     font: normal normal normal 14px/19px Open Sans;
     letter-spacing: 0px;
