@@ -68,7 +68,8 @@ body section, article{
 
     display: block;
     margin: 28px auto 0px;
-    width: 310px;
+    width: 100%;
+    max-width: 310px;
     height: 67px;
     background: #08A6E4 0% 0% no-repeat padding-box;
     box-shadow: 5px 10px 14px #07ACE629;
@@ -308,10 +309,15 @@ img{
     border-radius: 5px;
 }
 
+.circle-and-phone{
+    position: relative;
+    height: 180px;
+}
 .advantage-2 .ellipse{
     position: absolute;
-    display: block;
-    margin: 12px;
+    left: 50%;
+    margin-left: -70px;
+    margin-top: 12px;
     background: #07ACE6 0% 0% no-repeat padding-box;
     width: 132px;
     height: 132px;
@@ -321,16 +327,18 @@ img{
 
 .advantage-2 .iphone{
     position: relative;
+    left: 50%;
+    margin-left: -70px;
+    top: 19.01px;
     width: 55.55%;
     max-width: 175px;
     z-index: 1;
     display: block;
-    margin: 19.01px auto 26px;
 }
 
 .advantage-2 .advantage-title{
     display: block;
-    margin: 0px auto 0px 22px;
+    margin: 56px auto 0px 22px;
     text-align: left;
     font: normal normal normal 30px/35px Raleway;
     letter-spacing: 0px;
@@ -372,24 +380,55 @@ img{
     letter-spacing: 0px;
 }
 
-.advantage-3 .trumpet{
+.trumpet-and-background{
     position: relative;
-    display: block;
-    z-index: 2;
-    width: 100%;
-    background: #55DFB4 0% 0% no-repeat padding-box;
-    border: 1px solid #E8E9ED;
+    height: 195px;
 }
 
-.pricing{
+.green-background{
+    position: absolute;
+    left: 0%;
+    background: #55DFB4 0% 0% no-repeat padding-box;
+    width: 100%;
+    height: 195px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.advantage-3 .trumpet{
+    position: absolute;
+    left: 33%;
+    margin-left: -100px;
+    margin-top: 20px;
+    z-index: 2;
+    width: 100%;
+    max-width: 293.75px;
+    
+
+}
+
+/*.pricing{
     width: 100%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 
 .pricing .pricing-title{
     display: block;
-    margin: 53.34px auto 0px;
     text-align: center;
     font: normal normal normal 36px/42px Raleway;
     letter-spacing: 0px;
 }
+
+.pricing .pricing-basic{
+    margin: 14px auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #FB3B64;
+    border-radius: 18px;
+}
+
+.type-and-price{
+    display:flex;
+    flex-direction: row;
+    
+}*/
