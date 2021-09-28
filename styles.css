@@ -505,6 +505,7 @@ img{
 }
 
 .professional-price{
+    text-align: center;
     display: block;
     margin-top: 30%;
     margin-left: 16%;
@@ -513,7 +514,7 @@ img{
     color: #07ACE6;
 }
 
-.pricing-professional .professional-limited{
+.professional-limited{
     text-align: center;
     font: normal normal bold 12px/1px Raleway;
     letter-spacing: 0px;
@@ -541,4 +542,86 @@ img{
     letter-spacing: 0px;
     color: white;
     border: none;
+}
+
+.pricing .pricing-premium{
+    margin-top: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #55DFB4;
+    border-radius: 18px;
+    min-height: 277px;
+}
+
+.premium{
+    display: block;
+    margin-left: 17%;
+    font: normal normal bold 20px/1px Raleway;
+    letter-spacing: 0px;
+    color: #13253B;
+}
+
+.premium-price{
+    display: block;
+    text-align: center;
+    margin-top: 30%;
+    margin-left: 16%;
+    font: normal normal 300 46px/2px Open Sans;
+    letter-spacing: 0px;
+    color: #55DFB4;
+}
+
+.premium-limited{
+    font: normal normal bold 12px/1px Raleway;
+    letter-spacing: 0px;
+    color: #13253B;
+}
+
+.premium-benefits{
+    display: block;
+    list-style-type: none;
+    text-align: left;
+    font: normal normal normal 14px/44px Open Sans;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.pricing-premium .pricing-button{
+    position: absolute;
+    display: block;
+    margin-top: 277px;
+    width: 150px;
+    height: 50px;
+    background: #55DFB4 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    font: normal normal bold 16px/22px 'Open Sans';
+    letter-spacing: 0px;
+    color: white;
+    border: none;
+}
+
+.questions{
+    display: block;
+    text-align: left;
+    margin-left: 8%;
+}
+
+.questions-title{
+    display: block;
+    text-align: left;
+    margin-top: 77px;
+    margin-bottom: 0px;
+    font: normal normal normal 40px/47px Raleway;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.questions-leave-email{
+    margin-top: 5px;
+    text-align: left;
+    font: normal normal normal 16px/22px Open Sans;
+    letter-spacing: 0px;
 }
