@@ -15,7 +15,7 @@ body section, article{
     max-width: 600px;
     margin: 0 auto;
 }
-.ActiveLinkBorder{
+.active-link-border{
     display: flex;
     top: 0px;
     max-width: none;
@@ -26,7 +26,7 @@ body section, article{
 
 }
 
-.ActiveLinkBorder h1{
+.active-link-border h1{
     top: 17px;
     margin-left: 25px;
     text-align: left;
@@ -38,14 +38,14 @@ body section, article{
 
 
 
-.OpeningSection{
+.opening-section{
     display: block;
     margin-top: 100px;
     opacity: 1;
 
 }
 
-.OpeningSection h1{
+.opening-section h1{
     text-align: center;
     font: normal normal normal 35px/41px Raleway;
     letter-spacing: 0px;
@@ -53,7 +53,7 @@ body section, article{
     opacity: 1;
 }
 
-.OpeningSection h2{
+.opening-section h2{
     display: block;
     text-align: center;
     font: normal normal normal 16px/22px 'Open Sans';
@@ -64,7 +64,7 @@ body section, article{
     margin: 20px auto 0px;
 }
 
-.OpeningSection #OpenButton{
+.opening-section #OpenButton{
 
     display: block;
     margin: 28px auto 0px;
@@ -76,18 +76,22 @@ body section, article{
     font: normal normal bold 16px/22px 'Open Sans';
     letter-spacing: 0px;
     color: white;
+    border: none;
+}
+
+img{
+    max-width: 100%;
 }
 
 .background{
     display: block;
-    margin: 23px auto;
-    width: 779px;
-    height: 267px;
-    max-width: none;
+    margin: 23px auto 0px;
+    height: 5.7%;
+    max-height: 267px;
     
 }
 
-.Popular{
+.popular{
     display: block;
     margin: 13px auto;
     text-align: center;
@@ -96,37 +100,41 @@ body section, article{
     z-index: -1;
 }
 
-.Popular h1{
+.popular h1{
     text-align: center;
     font: normal normal normal 30px/35px Raleway;
     letter-spacing: 0px;
     color: #000000;
     width: 81%;
-    margin: 0 auto;
+    margin: 50px auto 0px;
 }
 
-.dailyentries{
+.daily-entries{
     width: 116px;
     height: 140px;
     display: block;
     margin: 25px auto;
 }
 
-.dailyentries .Person{
+.daily-entries .ellipse{
+    position: absolute;
+    display: block;
+    margin: 0px 31.56px 0 21.73px;
+    background: #FB3B64 0% 0% no-repeat padding-box;
+    width: 62.71px;
+    height: 62.71px;
+    border-radius: 50%;
+}
+
+.daily-entries .person{
     display: block;
     width: 44px;
     height: 52px;
     margin: 28px 20px 21.89px 52px;
 }
 
-.dailyentries .ellipse{
-    background: #FB3B64 0% 0% no-repeat padding-box;
-    width: 63px;
-    height: 63px;
-    border-radius: 50%;
-}
 
-.dailyentries h4{
+.daily-entries h4{
     display: block;
     margin: 21.89px auto 0px;
     text-align: center;
@@ -135,7 +143,7 @@ body section, article{
     color: #000000;
 }
 
-.dailyentries .entries{
+.daily-entries .entries{
     display: block;
     margin: 19.11px auto 0px;
     font: normal normal normal 17px/20px Raleway;
@@ -145,32 +153,83 @@ body section, article{
 
 }
 
-.seenproducts{
+.seen-products{
     width: 176px;
     height: 167px;
     display: block;
     margin: 25px auto;
 }
 
-.seenproducts .Eye{
+.seen-products .ellipse{
+    position: absolute;
+    display: block;
+    margin: -12.5px 57px 0px 56px;
+    background: #08A6E4 0% 0% no-repeat padding-box;
+    width: 62.71px;
+    height: 62.71px;
+    border-radius: 50%;
+}
+
+.seen-products .eye{
     display: block;
     margin: 39.25px 32.78px 25.25px 77.78px;
     width: 65px;
     height: 37px;
 }
 
-.seenproducts h4{
+.seen-products h4{
     display: block;
     margin: 0px, auto;
     text-align: center;
     font: normal normal 800 20px/24px Raleway;
     letter-spacing: 5.96px;
     color: #000000;
+}
 
+.seen-products .products{
+    display: block;
+    margin: 19px auto 0px;
+    text-align: center;
+    font: normal normal normal 16px/19px Raleway;
+    letter-spacing: 0px;
+    color: #A5A5A5;
 
 }
 
-.seenproducts .products{
+.added-posts{
+    width: 163px;
+    height: 168px;
+    display: block;
+    margin: -25px auto 50px;
+}
+
+.added-posts .ellipse{
+    position: absolute;
+    display: block;
+    margin: -6px 57px 49.62px 50.66px;
+    background: #55DFB4 0% 0% no-repeat padding-box;
+    width: 62.71px;
+    height: 62.71px;
+    border-radius: 50%;
+}
+
+.added-posts .catalog{
+    display: block;
+    margin: 31px 29px 22.94px 82px;
+    width: 52px;
+    height: 48px;
+}
+
+.added-posts h4{
+    display: block;
+    margin: 0px, auto;
+    text-align: center;
+    font: normal normal 800 20px/24px Raleway;
+    letter-spacing: 5.96px;
+    color: #000000;
+}
+
+.added-posts .posts{
     display: block;
     margin: 19px auto;
     text-align: center;
