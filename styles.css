@@ -23,6 +23,8 @@ body section, article{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     align-items: center;
+    justify-content: space-between;
+
 
 }
 
@@ -36,7 +38,10 @@ body section, article{
     opacity: 1;
 }
 
-
+.drop-down{
+    margin-right: 25px;
+    width: 5.33%;
+}
 
 .opening-section{
     display: block;
@@ -461,7 +466,7 @@ img{
     display: block;
     list-style-type: none;
     text-align: left;
-    font: normal normal normal 14px/44px Open Sans;
+    font: normal normal normal 14px/44px 'Open Sans';
     letter-spacing: 0px;
     color: #000000;
     margin-top: 25px;
@@ -533,7 +538,7 @@ img{
     display: block;
     list-style-type: none;
     text-align: left;
-    font: normal normal normal 14px/44px Open Sans;
+    font: normal normal normal 14px/44px 'Open Sans';
     letter-spacing: 0px;
     color: #000000;
     margin-top: 37px;
@@ -582,7 +587,7 @@ img{
     margin-top: 40%;
     margin-bottom: 35%;
     margin-left: 16%;
-    font: normal normal 300 46px/2px Open Sans;
+    font: normal normal 300 46px/2px 'Open Sans';
     letter-spacing: 0px;
     color: #55DFB4;
 
@@ -599,7 +604,7 @@ img{
     display: block;
     list-style-type: none;
     text-align: left;
-    font: normal normal normal 14px/44px Open Sans;
+    font: normal normal normal 14px/44px 'Open Sans';
     letter-spacing: 0px;
     color: #000000;
     padding: 0;
@@ -640,6 +645,47 @@ img{
 .questions-leave-email{
     margin-top: 5px;
     margin-left: 8%;
-    font: normal normal normal 16px/22px Open Sans;
+    font: normal normal normal 16px/22px 'Open Sans';
     letter-spacing: 0px;
+}
+
+.contact{
+    display: block;
+    margin-left: 8%;
+}
+
+.icon-and-mail{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.mail-icon{
+    width: 7.2%;
+}
+
+.mail-address{
+    text-decoration: none;
+    font: normal normal 600 16px/22px 'Open Sans';
+    letter-spacing: 0px;
+    color: #A5A5A5;
+    margin-left: 2%;
+}
+
+.icon-and-phone{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.phone-icon{
+    width: 7.2%;
+}
+
+.phone-number{
+    text-decoration: none;
+    font: normal normal 600 16px/22px 'Open Sans';
+    letter-spacing: 0px;
+    color: #A5A5A5;
+    margin-left: 2%;
 }
