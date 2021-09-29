@@ -41,6 +41,7 @@ body section, article{
 .drop-down{
     margin-right: 25px;
     width: 5.33%;
+    max-width: 30px;
 }
 
 .opening-section{
@@ -480,6 +481,7 @@ img{
     margin-right: 10px;
 }
 
+
 .pricing-basic .pricing-button{
     position: absolute;
     display: block;
@@ -746,6 +748,7 @@ img{
     margin-left: 31%;
     margin-bottom: 44px;
     width: 60.26%;
+    max-width: 226px;
     height: 1.2%;
     min-height: 57px;
     font: normal normal bold 13px/18px 'Open Sans';
@@ -781,7 +784,7 @@ img{
     width: 100%;
     height: 3.2%;
     margin-left: 4.53%;
-    font: normal normal normal 11px/15px Open Sans;
+    font: normal normal normal 11px/15px 'Open Sans';
     letter-spacing: 0px;
     color: #A5A5A5;
 }
