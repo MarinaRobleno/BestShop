@@ -28,6 +28,10 @@ body section, article{
 
 }
 
+.active-link-border ul{
+    display: none;
+}
+
 .active-link-border h1{
     top: 17px;
     margin-left: 25px;
@@ -98,12 +102,17 @@ img{
     
 }
 
+.background-hd{
+    display: none;
+}
+
 .popular{
     display: block;
     margin: 13px auto 0px;
     text-align: center;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px -5px 80px #00000029;
+    padding-top: 50px;
 
 }
 
@@ -113,7 +122,7 @@ img{
     letter-spacing: 0px;
     color: #000000;
     width: 81%;
-    margin: 50px auto 0px;
+    margin: 0px auto 0px;
 }
 
 .daily-entries{
@@ -251,7 +260,8 @@ img{
 
 .advantages{
     display: block;
-    margin: 41px auto;
+    margin: 0px auto;
+    padding-top: 41px;
     text-align: center;
     background: #F7F7F7 0% 0% no-repeat padding-box;
 }
@@ -420,7 +430,7 @@ img{
     position: relative;
 }
 
-.pricing .pricing-title{
+.pricing-title{
     display: block;
     text-align: center;
     font: normal normal normal 36px/42px Raleway;
@@ -818,11 +828,37 @@ img{
         display: none;
     }
 
+    .active-link-border ul{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        font: normal normal bold 11px/15px Open Sans;
+        letter-spacing: 3.28px;
+        color: #A5A5A5;
+    }
+
+    .active-link-border li{
+        margin-right: 95px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
+    .why-us-header{
+        font: normal normal bold 11px/15px Open Sans;
+        letter-spacing: 3.28px;
+        color: #000000;
+        border-bottom: 4px solid #08A6E4;
+        
+    }
 
     .background{
-        margin: 0;
-        max-height: none;
-        min-width: 100%;
+        display:none;
+    }
+
+    .background-hd{
+        width: 100%;
+
+
     }
 
     .popular{
@@ -855,4 +891,112 @@ img{
     .added-posts .ellipse{
         margin-top: 25px;
     }
+
+    .advantages{
+        min-width: 100%;
+    }
+
+    .advantage-1, .advantage-2, .advantage-3{
+        max-width: 69.12%;
+    } 
+/* ADD ADVANTAGES */
+
+    .pricing{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        min-width: 100%;
+        margin: 50px auto;        
+
+    }
+
+    .pricing .pricing-basic{
+        display: block;
+        margin: 0px 59px 0px 180px;
+        height: 461px;
+        min-width: 372px;
+    }
+
+    .pricing-basic .basic{
+        margin: 40px auto;
+    }
+
+    .pricing-basic .basic-price{
+        margin: 20px auto;
+    }
+
+    .pricing-basic .basic-benefits{
+        margin: 69px auto;
+        text-align: center;
+    }
+
+    .pricing-basic .pricing-button{
+        margin: 0 auto;
+        left: 18.5%;
+        top: 458px;
+    }
+
+    .pricing .pricing-professional{
+        display: block;
+        margin: 0px 59px 0px 0px;
+        height: 500px;
+        min-width: 405px;
+    }
+
+    .pricing-professional .professional{
+        margin: 60px auto 0px;
+    }
+
+    .pricing-professional .professional-price{
+        margin: 50px auto 0px;
+
+    }
+
+    .pricing-professional .professional-limited{
+        margin: 50px auto 0px;
+    }
+
+    .pricing-professional .professional-benefits{
+        margin: 61px auto 0px;
+        text-align: center;
+    }
+
+    .pricing-professional .pricing-button{
+        margin: 0 auto;
+        left: 43%;
+        top: 475px;
+    }
+
+    .pricing .pricing-premium{
+        display: block;
+        margin: 0px 180px 0px 0px;
+        height: 461px;
+        min-width: 372px;
+    }
+
+    .pricing-premium .premium{
+        margin: 40px auto;
+    }
+
+    .pricing-premium .premium-price{
+        margin: 20px auto;
+    }
+
+    .pricing-premium .premium-limited{
+        margin: 50px auto 0px;
+    }
+
+    .pricing-premium .premium-benefits{
+        margin: 19px auto;
+        text-align: center;
+    }
+
+    .pricing-premium .pricing-button{
+        margin: 0 auto;
+        left: 67%;
+        top: 458px;
+    }
+
+
 }
