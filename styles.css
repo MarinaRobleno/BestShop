@@ -728,12 +728,18 @@ img{
 }
 
 
+.mail-conditions-and-check{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
 .conditions-and-check{
     display: flex;
     flex-direction: row;
     margin-top: 31px;
     justify-content: space-between;
-
 }
 
 .blue-check{
@@ -852,12 +858,12 @@ img{
     }
 
     .background{
-        display:none;
+        width: 100%;
+        object-fit: cover;
     }
 
     .background-hd{
-        width: 100%;
-
+        display: none;
 
     }
 
@@ -901,6 +907,9 @@ img{
     } 
 /* ADD ADVANTAGES */
 
+    .pricing-title{
+        padding-top: 100px;
+    }
     .pricing{
         display: flex;
         align-items: center;
@@ -984,11 +993,11 @@ img{
     }
 
     .pricing-premium .premium-limited{
-        margin: 50px auto 0px;
+        margin: 30px auto 0px;
     }
 
     .pricing-premium .premium-benefits{
-        margin: 19px auto;
+        margin: 40px auto;
         text-align: center;
     }
 
@@ -998,5 +1007,67 @@ img{
         top: 458px;
     }
 
+    .fullscreen-questions{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 155px;
+    }
+
+
+    .questions-title{
+        margin-left: 22.44%;
+        margin-top: 0;
+    }
+
+    .questions-leave-email{
+        margin-left: 22.44%;
+        margin-top: 22px;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .icon-and-mail{
+        margin-left: 22.44%;
+        margin-top: 42px;
+    }
+
+    .mail-icon{
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon-and-phone{
+        margin-left: 20px;
+        margin-top: 42px;
+    }
+
+    .phone-icon{
+        width: 24px;
+        height: 24px;
+    }
+
+
+
+    .write-name-and-mail{
+        margin-top: 0;
+    }
+
+    .send-button{
+        margin-left: 50%;
+    }
+
+
+    .twitter{
+        margin-right: 5%;
+    }
+
+    .facebook{
+        margin-right: 8.3%;
+    }
 
 }
