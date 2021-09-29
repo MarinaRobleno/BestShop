@@ -807,3 +807,52 @@ img{
 .facebook{
     margin-right: 25%;
 }
+
+
+@media only screen and (min-width: 1000px){
+    .active-link-border #LogoText{
+        margin-left: 8.3%;
+    }
+
+    .active-link-border .drop-down{
+        display: none;
+    }
+
+
+    .background{
+        margin: 0;
+        max-height: none;
+        min-width: 100%;
+    }
+
+    .popular{
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .popular-sections{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 20.53%;
+        margin-right: 20.53%;   
+    }
+
+    .daily-entries, .seen-products, .added-posts{
+        margin: 7% auto 10%;
+    }
+
+    .daily-entries .ellipse{
+        margin-top: 25px;
+    }
+
+    .seen-products .ellipse{
+        margin-top: 25px;
+    }
+
+    .added-posts .ellipse{
+        margin-top: 25px;
+    }
+}
