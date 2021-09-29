@@ -1,6 +1,6 @@
 html, *{
     box-sizing: border-box;
-    margin: none;
+    margin: 0;
 }
 
 html{
@@ -419,6 +419,7 @@ img{
     text-align: center;
     font: normal normal normal 36px/42px Raleway;
     letter-spacing: 0px;
+    margin-bottom: 14px;
 }
 
 .pricing .pricing-basic{
@@ -429,12 +430,13 @@ img{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #FB3B64;
     border-radius: 18px;
-    min-height: 251px;
+    max-width: 78.4%;
 }
 
 .type-and-price{
     display:flex;
     flex-direction: column; 
+    align-items: center;
 
 }
 
@@ -448,7 +450,7 @@ img{
 
 .basic-price{
     display: block;
-    margin-top: 30%;
+    margin-top: 60%;
     margin-left: 16%;
     font: normal normal 300 46px/2px 'Open Sans';
     letter-spacing: 0px;
@@ -462,17 +464,21 @@ img{
     font: normal normal normal 14px/44px Open Sans;
     letter-spacing: 0px;
     color: #000000;
+    margin-top: 25px;
+    margin-bottom: 39px;
+    padding: 0;
 }
 
 .green-checkbox{
     width:11px;
     height:11px;
+    margin-right: 10px;
 }
 
 .pricing-basic .pricing-button{
     position: absolute;
     display: block;
-    margin-top: 251px;
+    margin-top: 288px;
     width: 150px;
     height: 50px;
     background: #EB476E 0% 0% no-repeat padding-box;
@@ -493,7 +499,7 @@ img{
     box-shadow: 5px 10px 27px #07ACE629;
     border: 1px solid #07ACE6;
     border-radius: 18px;
-    min-height: 277px;
+    max-width: 90%;
 }
 
 .professional{
@@ -507,7 +513,8 @@ img{
 .professional-price{
     text-align: center;
     display: block;
-    margin-top: 30%;
+    margin-top: 35%;
+    margin-bottom: 30%;
     margin-left: 16%;
     font: normal normal 300 46px/2px 'Open Sans';
     letter-spacing: 0px;
@@ -519,6 +526,7 @@ img{
     font: normal normal bold 12px/1px Raleway;
     letter-spacing: 0px;
     color: #13253B;
+    margin-left: 17%;
 }
 
 .professional-benefits{
@@ -528,12 +536,15 @@ img{
     font: normal normal normal 14px/44px Open Sans;
     letter-spacing: 0px;
     color: #000000;
+    margin-top: 37px;
+    margin-bottom: 37px;
+    padding: 0;
 }
 
 .pricing-professional .pricing-button{
     position: absolute;
     display: block;
-    margin-top: 277px;
+    margin-top: 295px;
     width: 150px;
     height: 50px;
     background: #07ACE6 0% 0% no-repeat padding-box;
@@ -542,6 +553,7 @@ img{
     letter-spacing: 0px;
     color: white;
     border: none;
+
 }
 
 .pricing .pricing-premium{
@@ -553,7 +565,7 @@ img{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #55DFB4;
     border-radius: 18px;
-    min-height: 277px;
+    max-width: 78.4%;
 }
 
 .premium{
@@ -567,17 +579,20 @@ img{
 .premium-price{
     display: block;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 40%;
+    margin-bottom: 35%;
     margin-left: 16%;
     font: normal normal 300 46px/2px Open Sans;
     letter-spacing: 0px;
     color: #55DFB4;
+
 }
 
 .premium-limited{
     font: normal normal bold 12px/1px Raleway;
     letter-spacing: 0px;
     color: #13253B;
+    margin-left: 15%;
 }
 
 .premium-benefits{
@@ -587,12 +602,15 @@ img{
     font: normal normal normal 14px/44px Open Sans;
     letter-spacing: 0px;
     color: #000000;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 39px;
 }
 
 .pricing-premium .pricing-button{
     position: absolute;
     display: block;
-    margin-top: 277px;
+    margin-top: 288px;
     width: 150px;
     height: 50px;
     background: #55DFB4 0% 0% no-repeat padding-box;
@@ -606,12 +624,12 @@ img{
 .questions{
     display: block;
     text-align: left;
-    margin-left: 8%;
+    left: 8%;
 }
 
 .questions-title{
     display: block;
-    text-align: left;
+    margin-left: 8%;
     margin-top: 77px;
     margin-bottom: 0px;
     font: normal normal normal 40px/47px Raleway;
@@ -621,7 +639,7 @@ img{
 
 .questions-leave-email{
     margin-top: 5px;
-    text-align: left;
+    margin-left: 8%;
     font: normal normal normal 16px/22px Open Sans;
     letter-spacing: 0px;
 }
