@@ -96,19 +96,15 @@ img{
 
 .background{
     display: block;
-    margin: 23px auto 0px;
+    margin: 43px auto 0px;
     height: 5.7%;
     max-height: 267px;
     
 }
 
-.background-hd{
-    display: none;
-}
-
 .popular{
     display: block;
-    margin: 13px auto 0px;
+    margin: 0px auto 0px;
     text-align: center;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px -5px 80px #00000029;
@@ -860,12 +856,9 @@ img{
     .background{
         width: 100%;
         object-fit: cover;
+        margin-top: 100px;
     }
 
-    .background-hd{
-        display: none;
-
-    }
 
     .popular{
         min-width: 100%;
@@ -905,6 +898,7 @@ img{
     .advantage-1, .advantage-2, .advantage-3{
         max-width: 69.12%;
     } 
+    
 /* ADD ADVANTAGES */
 
     .pricing-title{
