@@ -834,7 +834,7 @@ img{
         display: flex;
         flex-direction: row;
         list-style-type: none;
-        font: normal normal bold 11px/15px Open Sans;
+        font: normal normal bold 11px/15px 'Open Sans';
         letter-spacing: 3.28px;
         color: #A5A5A5;
     }
@@ -845,8 +845,9 @@ img{
         padding-top: 25px;
     }
 
+
     .why-us-header{
-        font: normal normal bold 11px/15px Open Sans;
+        font: normal normal bold 11px/15px 'Open Sans';
         letter-spacing: 3.28px;
         color: #000000;
         border-bottom: 4px solid #08A6E4;
@@ -893,12 +894,105 @@ img{
 
     .advantages{
         min-width: 100%;
+        padding-bottom: 41px;
     }
 
     .advantage-1, .advantage-2, .advantage-3{
         max-width: 69.12%;
     } 
     
+    .advantages .advantage-1{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .advantage-1 .ellipse{
+        margin: 0;
+        left: 80.5%;
+        bottom: 43%;
+        width: 13.07%;
+        height: 32%;
+        border-radius: 22%;
+    }
+
+    .advantage-1 .macbook{
+        display: block;
+        max-width: 32.76%;
+        margin-right: 7.23%;
+        margin-top: 7%;
+        margin-bottom: 0;
+    }
+
+    .title-description-advantage-1{
+        margin: 8% auto 5%;
+        margin-left: 2.22%;
+
+    }
+
+    .title-description-advantage-1 .advantage-description{
+        margin-right: 25%;
+        border-bottom: 4px solid #FB3B64;
+        padding-bottom: 40px; 
+
+    }
+    
+    .advantages .advantage-2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .advantage-2 .ellipse{
+        top: 5%;
+        left: 5%;
+        margin: 0;
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .advantage-2 .iphone{
+        left: 0px;
+        margin: 0 15%;
+        top: 0px;
+        max-width: none;
+        width: 100%;
+        
+    }
+
+    .title-description-advantage-2{
+        width: 45%;
+        margin: 8% auto;
+        margin-right: 2.22%;
+    }
+
+    .advantage-2 .advantage-title{
+        margin: 0 40% 10% 5%;
+    }
+
+    .advantage-2 .advantage-description{
+        margin: 0 8% 0 5%;
+        border-bottom: 4px solid #08A6E4;
+        padding-bottom: 10%;
+    }
+    
+
+    .advantages .advantage-3{
+        display: flex;
+        align-items: left;
+        flex-direction: row;
+        width: 40%;
+    }
+
+    .advantage-3 .title-description-advantage-3{
+
+    }
+
+    .trumpet-and-background{
+
+    }
+
 /* ADD ADVANTAGES */
 
     .pricing-title{
