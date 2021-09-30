@@ -1024,7 +1024,6 @@ img{
         height: 319px;
     }
 
-/* ADD ADVANTAGES */
 
     .pricing-title{
         padding-top: 100px;
@@ -1032,16 +1031,14 @@ img{
     .pricing{
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction: row;
-        justify-content: space-between;
-        max-width: 90%;
-        
+        max-width: 100%;
     }
-
 
     .pricing .pricing-basic{
         display: block;
-        margin: 0px auto;
+        margin: 0px 20px 0 0;
         height: 461px;
         width: 372px;
     }
@@ -1071,7 +1068,7 @@ img{
 
     .pricing .pricing-professional{
         display: block;
-        margin: 0px auto;
+        margin: 0px 20px 0 0;
         height: 500px;
         width: 405px;
     }
@@ -1104,7 +1101,7 @@ img{
 
     .pricing .pricing-premium{
         display: block;
-        margin: 0px auto;
+        margin: 0px;
         height: 461px;
         width: 372px;
     }
