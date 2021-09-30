@@ -370,9 +370,12 @@ img{
     display: block;
     margin: 0px auto 0px;
     width: 84%;
+    border-radius: 5px;
+}
+
+.advantages .title-description-advantage-3{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #E8E9ED;
-    border-radius: 5px;
 }
 
 .advantage-3 .advantage-title{
@@ -436,6 +439,7 @@ img{
 
 .pricing .pricing-basic{
     display: flex;
+    position: relative;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -505,6 +509,7 @@ img{
 .pricing .pricing-professional{
     margin-top: 54px;
     display: flex;
+    position: relative;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -572,6 +577,7 @@ img{
 .pricing .pricing-premium{
     margin-top: 54px;
     display: flex;
+    position: relative;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -980,17 +986,42 @@ img{
 
     .advantages .advantage-3{
         display: flex;
-        align-items: left;
+
         flex-direction: row;
-        width: 40%;
+    
     }
 
     .advantage-3 .title-description-advantage-3{
+        display: block;
+        margin-right: 50px;
+        width: 58%;
+        height: 319px;
 
     }
 
-    .trumpet-and-background{
+    .title-description-advantage-3 .advantage-title{
+        margin: 12% 8% 10%;
+    }
 
+    .title-description-advantage-3 .advantage-description{
+        border-bottom: 4px solid #55DFB4;
+        padding-bottom: 8%;
+        margin-bottom: 10%;
+        margin-left: 8%;
+    }
+
+    .trumpet-and-background{
+        flex: 1;
+
+    }
+
+    .trumpet-and-background .trumpet{
+        width: 100%;
+        top: 50%;
+    }
+
+    .trumpet-and-background .green-background{
+        height: 319px;
     }
 
 /* ADD ADVANTAGES */
@@ -1002,17 +1033,17 @@ img{
         display: flex;
         align-items: center;
         flex-direction: row;
-        justify-content: center;
-        min-width: 100%;
-        margin: 50px auto;        
-
+        justify-content: space-between;
+        max-width: 90%;
+        
     }
+
 
     .pricing .pricing-basic{
         display: block;
-        margin: 0px 59px 0px 180px;
+        margin: 0px auto;
         height: 461px;
-        min-width: 372px;
+        width: 372px;
     }
 
     .pricing-basic .basic{
@@ -1029,16 +1060,20 @@ img{
     }
 
     .pricing-basic .pricing-button{
-        margin: 0 auto;
-        left: 18.5%;
-        top: 458px;
+        margin-top: 0;
+        margin-left: -69px;
+        margin-bottom: -28px;
+        bottom: 0;
+        left: 50%;
+        
+
     }
 
     .pricing .pricing-professional{
         display: block;
-        margin: 0px 59px 0px 0px;
+        margin: 0px auto;
         height: 500px;
-        min-width: 405px;
+        width: 405px;
     }
 
     .pricing-professional .professional{
@@ -1060,16 +1095,18 @@ img{
     }
 
     .pricing-professional .pricing-button{
-        margin: 0 auto;
-        left: 43%;
-        top: 475px;
+        margin-top: 0;
+        margin-left: -69px;
+        margin-bottom: -28px;
+        bottom: 0;
+        left: 50%;
     }
 
     .pricing .pricing-premium{
         display: block;
-        margin: 0px 180px 0px 0px;
+        margin: 0px auto;
         height: 461px;
-        min-width: 372px;
+        width: 372px;
     }
 
     .pricing-premium .premium{
@@ -1090,9 +1127,11 @@ img{
     }
 
     .pricing-premium .pricing-button{
-        margin: 0 auto;
-        left: 67%;
-        top: 458px;
+        margin-top: 0;
+        margin-left: -69px;
+        margin-bottom: -28px;
+        bottom: 0;
+        left: 50%;
     }
 
     .fullscreen-questions{
@@ -1137,6 +1176,10 @@ img{
     .phone-icon{
         width: 24px;
         height: 24px;
+    }
+
+    .phone-number{
+        margin-left: 0;
     }
 
 
