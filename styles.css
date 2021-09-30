@@ -435,6 +435,7 @@ img{
     font: normal normal normal 36px/42px Raleway;
     letter-spacing: 0px;
     margin-bottom: 14px;
+    padding-top: 53.34px;
 }
 
 .pricing .pricing-basic{
@@ -712,23 +713,28 @@ img{
     margin-left: 8%;
 }
 
-.name-header{
+.write-name-and-mail label{
+    display: block;
     font: normal normal bold 11px/15px Open Sans;
     letter-spacing: 3.28px;
     color: #08A6E4;
-    border-bottom: 1px solid #95989A;
-    padding-bottom: 41.98px;
+    margin-bottom: 41px;
+    
+}
+
+.write-name-and-mail input{
+    display: block;
+    width: 100%;
     margin-bottom: 42px;
-}
-
-.email-header{
-    font: normal normal bold 11px/15px Open Sans;
-    letter-spacing: 3.28px;
-    color: #08A6E4;
+    border: none;
     border-bottom: 1px solid #95989A;
-    padding-bottom: 41.98px;
+    padding: 5px 0;
 }
 
+.write-name-and-mail input:focus{
+    outline: none;
+    border-color: #08A6E4;
+}
 
 .mail-conditions-and-check{
     display: flex;
@@ -741,15 +747,69 @@ img{
     display: flex;
     flex-direction: row;
     margin-top: 31px;
-    justify-content: space-between;
+    justify-content: right; 
 }
 
 .blue-check{
-    width: 6.4%;
-    height: 0.5%;
-    min-height: 24px;
-    margin-left: 7%;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 2px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
+}
+
+.blue-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.blue-check:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.blue-check input:checked ~ .checkmark {
+    background-color: #08A6E4;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.blue-check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.blue-check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .conditions-text{
@@ -1008,6 +1068,8 @@ img{
         padding-bottom: 8%;
         margin-bottom: 10%;
         margin-left: 8%;
+        margin-right: 8%;
+
     }
 
     .trumpet-and-background{
@@ -1038,7 +1100,7 @@ img{
 
     .pricing .pricing-basic{
         display: block;
-        margin: 0px 20px 0 0;
+        margin: 0px 20px 0 5px;
         height: 461px;
         width: 372px;
     }
@@ -1101,7 +1163,7 @@ img{
 
     .pricing .pricing-premium{
         display: block;
-        margin: 0px;
+        margin: 0px 5px 0 0;
         height: 461px;
         width: 372px;
     }
