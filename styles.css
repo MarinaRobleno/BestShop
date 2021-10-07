@@ -450,6 +450,10 @@ img{
     max-width: 78.4%;
 }
 
+.pricing .pricing-basic:hover{
+    box-shadow: 5px 10px 27px #eb476d3d;
+}
+
 .type-and-price{
     display:flex;
     flex-direction: column; 
@@ -515,10 +519,13 @@ img{
     align-items: center;
     justify-content: space-around;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 5px 10px 27px #07ACE629;
     border: 1px solid #07ACE6;
     border-radius: 18px;
     max-width: 90%;
+}
+
+.pricing .pricing-professional:hover{
+    box-shadow: 5px 10px 27px #07ACE629;
 }
 
 .professional{
@@ -586,6 +593,10 @@ img{
     border: 1px solid #55DFB4;
     border-radius: 18px;
     max-width: 78.4%;
+}
+
+.pricing .pricing-premium:hover{
+    box-shadow: 5px 10px 27px #55DFB43d;
 }
 
 .premium{
@@ -912,11 +923,12 @@ img{
     }
 
 
-    .why-us-header{
+    .active-link-border li:hover{
         font: normal normal bold 11px/15px 'Open Sans';
         letter-spacing: 3.28px;
         color: #000000;
         border-bottom: 4px solid #08A6E4;
+        padding-bottom: 21px;
         
     }
 
@@ -1103,6 +1115,14 @@ img{
         margin: 0px 20px 0 5px;
         height: 461px;
         width: 372px;
+        transition: width .3s, height .3s;
+    }
+
+    .pricing .pricing-basic:hover{
+        display: block;
+        margin: 0px 20px 0 0;
+        height: 500px;
+        width: 405px;
     }
 
     .pricing-basic .basic{
@@ -1130,13 +1150,21 @@ img{
 
     .pricing .pricing-professional{
         display: block;
+        margin: 0px 20px 0 5px;
+        height: 461px;
+        width: 372px;
+        transition: width .3s, height .3s;
+    }
+
+    .pricing .pricing-professional:hover{
+        display: block;
         margin: 0px 20px 0 0;
         height: 500px;
         width: 405px;
     }
 
     .pricing-professional .professional{
-        margin: 60px auto 0px;
+        margin: 40px auto 0px;
     }
 
     .pricing-professional .professional-price{
@@ -1149,7 +1177,7 @@ img{
     }
 
     .pricing-professional .professional-benefits{
-        margin: 61px auto 0px;
+        margin: 53px auto 0px;
         text-align: center;
     }
 
@@ -1166,6 +1194,14 @@ img{
         margin: 0px 5px 0 0;
         height: 461px;
         width: 372px;
+        transition: width .3s, height .3s;
+    }
+
+    .pricing .pricing-premium:hover{
+        display: block;
+        margin: 0px 20px 0 0;
+        height: 500px;
+        width: 405px;
     }
 
     .pricing-premium .premium{
@@ -1173,11 +1209,11 @@ img{
     }
 
     .pricing-premium .premium-price{
-        margin: 20px auto;
+        margin: 10px auto;
     }
 
     .pricing-premium .premium-limited{
-        margin: 30px auto 0px;
+        margin: 40px auto 0px;
     }
 
     .pricing-premium .premium-benefits{
