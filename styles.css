@@ -16,7 +16,7 @@ body section, article{
     margin: 0 auto;
 }
 
-.percentage-scroller{
+.fixed-scroller{
     display: flex;
     position: fixed;
     right: 5px;
@@ -26,8 +26,20 @@ body section, article{
     width: 40px;
     height: 40px;
     border: 2px solid #08A6E4;
-    font: normal normal normal 16px/19px Raleway;
+    background-color: white;
+    box-shadow: 5px 10px 14px #07ACE629;
+    font: normal normal bold 11px/15px 'Open Sans';
+    justify-content: center;
+    align-items: center;
 }
+
+#return-to-top{
+    left: 5px;
+    right: 100%;
+    border: none;
+    cursor: pointer;
+}
+
 
 .active-link-border{
     display: flex;

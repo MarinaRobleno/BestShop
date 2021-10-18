@@ -3,12 +3,6 @@ const closeButton = document.getElementById("close");
 let dropdownContent = document.getElementById("header-links");
 let isHidden = true;
 
-
-
-let percentage = document.getElementById("percentage");
-percentage.innerHTML = '';
-
-
 //Hamburger menu function
 function openDropdown(){
     if(isHidden === true){
@@ -23,19 +17,39 @@ function openDropdown(){
         isHidden = true;
     }
 }
-
-//Black hover function
-function blackHover(){
-    
-}
-
-//Percentage scroll function
-function updatePercentage() {
-
-}
-
 openButton.addEventListener('click', openDropdown);
 closeButton.addEventListener('click',openDropdown);
 
+//Percentage scroll function
+let percentage = document.getElementById("percentage");
+var body = document.body,
+    html = document.documentElement;
+
+var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+var currentScrollPosition = window.scrollY;
+var percentagePosition = Math.floor((currentScrollPosition/height)*100);
+
+function getPercentage() {
+    percentage.textContent = percentagePosition + '%';
+}
+document.addEventListener('scroll',getPercentage);
+
+//Return to top function
 
 
+let arrowTop = document.getElementById("return-to-top");
+
+var delay = 200;
+
+function returnToTop() {
+    setTimeout(function () {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }, delay);
+}
+
+arrowTop.addEventListener("click",returnToTop);
