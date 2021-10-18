@@ -48,6 +48,10 @@ body section, article{
     max-width: 30px;
 }
 
+#close{
+    display: none;
+}
+
 .opening-section{
     display: block;
     margin-top: 100px;
