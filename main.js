@@ -23,6 +23,7 @@ closeButton.addEventListener('click',openDropdown);
 //Percentage scroll function
 let percentage = document.getElementById("percentage");
 let originalTitle = document.title;
+let arrowTop = document.getElementById("return-to-top");
 
 function getPercentage() {
     let scrollTop = window.scrollY;
@@ -31,15 +32,18 @@ function getPercentage() {
     let scrollPercent = scrollTop / (docHeight - winHeight);
     let scrollPercentRounded = Math.round(scrollPercent * 100);
     percentage.textContent = scrollPercentRounded + '%';
+    if(scrollPercentRounded >= 99){
+        percentage.style.bottom = '87px';
+        arrowTop.style.bottom = '87px';
+    }else{
+        percentage.style.bottom = '5px';
+        arrowTop.style.bottom = '5px';
+    }
 }
 
 window.addEventListener('scroll',getPercentage);
 
 //Return to top function
-
-
-let arrowTop = document.getElementById("return-to-top");
-
 var delay = 200;
 
 function returnToTop() {

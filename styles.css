@@ -999,9 +999,21 @@ img{
 
 @media only screen and (min-width: 1000px){
     .fixed-scroller{
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         font: normal normal bold 16px/15px 'Open Sans';
+    }
+
+    #return-to-top{
+        width: 65px;
+        height: 65px;
+        right: 5px;
+        left: auto;
+        bottom: 80px;
+    }
+
+    .mobile-bar{
+        display: none;
     }
 
     .active-link-border #LogoText{
