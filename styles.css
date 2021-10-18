@@ -968,6 +968,12 @@ img{
 
 
 @media only screen and (min-width: 1000px){
+    .fixed-scroller{
+        width: 70px;
+        height: 70px;
+        font: normal normal bold 16px/15px 'Open Sans';
+    }
+
     .active-link-border #LogoText{
         margin-left: 8.3%;
     }

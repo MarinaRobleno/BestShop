@@ -22,18 +22,18 @@ closeButton.addEventListener('click',openDropdown);
 
 //Percentage scroll function
 let percentage = document.getElementById("percentage");
-var body = document.body,
-    html = document.documentElement;
-
-var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                       html.clientHeight, html.scrollHeight, html.offsetHeight );
-var currentScrollPosition = window.scrollY;
-var percentagePosition = Math.floor((currentScrollPosition/height)*100);
+let originalTitle = document.title;
 
 function getPercentage() {
-    percentage.textContent = percentagePosition + '%';
+    let scrollTop = window.scrollY;
+    let docHeight = document.body.offsetHeight;
+    let winHeight = window.innerHeight;
+    let scrollPercent = scrollTop / (docHeight - winHeight);
+    let scrollPercentRounded = Math.round(scrollPercent * 100);
+    percentage.textContent = scrollPercentRounded + '%';
 }
-document.addEventListener('scroll',getPercentage);
+
+window.addEventListener('scroll',getPercentage);
 
 //Return to top function
 
