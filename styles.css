@@ -34,6 +34,7 @@ body section, article{
 }
 
 #return-to-top{
+    display: none;
     left: 5px;
     right: 100%;
     border: none;

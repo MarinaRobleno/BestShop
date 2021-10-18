@@ -32,7 +32,13 @@ function getPercentage() {
     let scrollPercent = scrollTop / (docHeight - winHeight);
     let scrollPercentRounded = Math.round(scrollPercent * 100);
     percentage.textContent = scrollPercentRounded + '%';
-    if(scrollPercentRounded >= 99){
+    if(scrollPercentRounded != 0){
+        arrowTop.style.display = 'block';
+    }else{
+        arrowTop.style.display = 'none';
+    }
+
+    if(scrollPercentRounded > 99){
         percentage.style.bottom = '87px';
         arrowTop.style.bottom = '87px';
     }else{
@@ -57,3 +63,5 @@ function returnToTop() {
 }
 
 arrowTop.addEventListener("click",returnToTop);
+
+//Form function
