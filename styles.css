@@ -28,10 +28,10 @@ body section, article{
 
 }
 
-.active-link-border ul{
+.header-links{
     display: none;
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 0px;
     width: 100%;
     height: 176px;

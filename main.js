@@ -1,17 +1,21 @@
 const openButton = document.getElementById("open");
 const closeButton = document.getElementById("close");
-const dropdownContent = document.querySelector("header-links");
+let dropdownContent = document.getElementById("header-links");
+let isHidden = true;
 
 function openDropdown(){
-    if(dropdownContent.style.display == 'none'){
+    if(isHidden === true){
         dropdownContent.style.display = 'block';
         openButton.style.display = 'none';
         closeButton.style.display = 'block';
+        isHidden = false;
+    }else{
+        dropdownContent.style.display = 'none';
+        openButton.style.display = 'block';
+        closeButton.style.display = 'none';
+        isHidden = true;
     }
 }
 
-function closeDropdown(){
-
-}
-
 openButton.addEventListener('click', openDropdown);
+closeButton.addEventListener('click',openDropdown);
