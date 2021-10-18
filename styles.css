@@ -30,6 +30,28 @@ body section, article{
 
 .active-link-border ul{
     display: none;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    height: 176px;
+    z-index: 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.active-link-border li{
+    text-align: left;
+    padding-top: 20px;
+    font: normal normal bold 11px/15px 'Open Sans';
+    color: #A5A5A5;
+    letter-spacing: 3.28px;
+    list-style-type: none;
+
+}
+
+.active-link-border li:hover{
+    color: #000000;
 }
 
 .active-link-border h1{
@@ -46,6 +68,7 @@ body section, article{
     margin-right: 25px;
     width: 5.33%;
     max-width: 30px;
+    cursor: pointer;
 }
 
 #close{
@@ -916,8 +939,16 @@ img{
         flex-direction: row;
         list-style-type: none;
         font: normal normal bold 11px/15px 'Open Sans';
+        justify-content: right;
         letter-spacing: 3.28px;
         color: #A5A5A5;
+        position: static;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 70px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: none;
     }
 
     .active-link-border li{
