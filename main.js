@@ -24,6 +24,8 @@ closeButton.addEventListener('click',openDropdown);
 let percentage = document.getElementById("percentage");
 let originalTitle = document.title;
 let arrowTop = document.getElementById("return-to-top");
+let under25 = false;
+
 
 function getPercentage() {
     let scrollTop = window.scrollY;
@@ -36,7 +38,7 @@ function getPercentage() {
         arrowTop.style.display = 'block';
     }else{
         arrowTop.style.display = 'none';
-    }
+    };
 
     if(scrollPercentRounded > 99){
         percentage.style.bottom = '87px';
@@ -44,7 +46,11 @@ function getPercentage() {
     }else{
         percentage.style.bottom = '5px';
         arrowTop.style.bottom = '5px';
+    };
+    if(scrollPercentRounded >= 25){
+        under25 = true;
     }
+
 }
 
 window.addEventListener('scroll',getPercentage);
@@ -156,7 +162,35 @@ myForm.addEventListener('submit',handleFormSubmit);
 
 //Newsletter area
  //FUNCION PARA DISPLAY
+ var news = document.getElementById("newsletter")
+ var closeNewsButton = document.getElementById('close-newsletter');
+ var newsHidden = true;
 
+function newsDisplayTrue() {
+    news.classList.add('newsletter--visible');
+}
+
+function newsAppear(){
+    newsHidden = false;
+    if(under25){
+        newsDisplayTrue; //No va
+    }
+    setTimeout(newsDisplayTrue, 5000);
+}
+
+ function closeNewsletter(){
+     if (!newsHidden){
+         news.style.display = 'none';
+         news.classList.remove('newsletter--visible');
+         newsHidden = true;
+     }
+ }
+ newsAppear();
+ closeNewsButton.addEventListener('click',closeNewsletter)
+
+ 
+
+//Function newsletter
 var newsMail = document.getElementById('newsletter-input');
 var newsButton = document.getElementById('news-button');
 var newsForm = document.getElementById('newsletter-form');
@@ -192,6 +226,7 @@ function submitNewsletter(event) {
     const newsValid = validateNews();
     if (newsValid){
         sendNews();
+        closeNewsletter();
     }
 }
 newsForm.addEventListener('submit',submitNewsletter);

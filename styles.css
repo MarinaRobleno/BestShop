@@ -43,7 +43,7 @@ body section, article{
 }
 
 .newsletter{
-    /*display: none;*/
+    display: none;
     position: fixed;
     left: 50%;
     margin-left: -180px;
@@ -59,7 +59,7 @@ body section, article{
 
 .newsletter--visible{
     display: block;
-    animation: newsLetter 200ms linear;
+    animation: newsLetter 0ms linear;
 }
 
 @keyframes displayNewsletter{
@@ -89,7 +89,7 @@ body section, article{
 }
 
 #newsletter-input{
-    width: 80%;
+    width: 93%;
     margin-left: 10px;
     border: none;
     border-bottom: 1px solid #95989A;
@@ -1124,7 +1124,7 @@ img{
     }
     
     #newsletter-input{
-        width: 80%;
+        width: 91%;
         margin-left: 40px;
     }
 
