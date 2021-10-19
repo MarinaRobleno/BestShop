@@ -28,7 +28,7 @@ body section, article{
     border: 2px solid #08A6E4;
     background-color: white;
     box-shadow: 5px 10px 14px #07ACE629;
-    font: normal normal bold 11px/15px 'Open Sans';
+    font: normal normal 11px/15px 'Raleway';
     justify-content: center;
     align-items: center;
 }
@@ -1002,15 +1002,15 @@ img{
     .fixed-scroller{
         width: 60px;
         height: 60px;
-        font: normal normal bold 16px/15px 'Open Sans';
+        font: normal normal 16px/15px 'Raleway';
     }
 
     #return-to-top{
         width: 65px;
         height: 65px;
-        right: 5px;
-        left: auto;
-        bottom: 80px;
+        left: 5px;
+        right: auto;
+        bottom: 0px;
     }
 
     .mobile-bar{

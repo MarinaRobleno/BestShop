@@ -65,3 +65,20 @@ function returnToTop() {
 arrowTop.addEventListener("click",returnToTop);
 
 //Form function
+var inputName = document.getElementById("inputName");
+var inputMail = document.getElementById("inputMail");
+var formButton = document.getElementById("form-button");
+
+function hasNumber(myString){
+    return /\d/.test(myString);
+}
+
+function formValidation() {
+    if(typeof inputName.value == 'string' && (!hasNumber(inputName.value) && (inputName.value.length >= 2 && inputName.value.length < 100))){
+        inputMail.value = 'bien';
+    }else{
+        inputMail.value = 'mal';
+    }
+}
+
+formButton.addEventListener('click',formValidation);
