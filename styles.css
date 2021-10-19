@@ -42,6 +42,58 @@ body section, article{
     background-color: none;
 }
 
+.newsletter{
+
+    position: fixed;
+    left: 50%;
+    margin-left: -180px;
+    top: 35%;
+    z-index: 100;
+    width: 360px;
+    height: 200px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #08A6E4;
+    font: normal normal normal 25px/41px Raleway;
+    box-shadow: 5px 10px 14px #07ACE629;
+    
+
+}
+
+.newsletter .newsletter-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+#close-newsletter{
+    margin-left: 315px;
+    width: 5.33%;
+    max-width: 30px;
+    cursor: pointer;
+
+}
+
+#newsletter-title{
+    padding-left: 10px;
+}
+
+#newsletter-input{
+    width: 80%;
+    margin-left: 10px;
+    margin-bottom: 42px;
+    border: none;
+    border-bottom: 1px solid #95989A;
+    padding: 5px 0;
+    font: normal normal normal 16px/22px 'Open Sans';
+}
+
+#newsletter-input:focus{
+    outline: none;
+    border-color: #08A6E4;
+}
+
 .mobile-bar{
     display: flex;
     position:absolute;
@@ -825,7 +877,7 @@ img{
 
 .write-name-and-mail label{
     display: block;
-    font: normal normal bold 11px/15px Open Sans;
+    font: normal normal bold 11px/15px 'Open Sans';
     letter-spacing: 3.28px;
     color: #08A6E4;
     margin-bottom: 41px;
@@ -839,6 +891,7 @@ img{
     border: none;
     border-bottom: 1px solid #95989A;
     padding: 5px 0;
+    font: normal normal normal 16px/22px Open Sans;
 }
 
 .write-name-and-mail input:focus{
@@ -1012,6 +1065,42 @@ img{
         right: auto;
         bottom: 0px;
     }
+
+    .newsletter{
+        width: 1000px;
+        height: 400px;
+        left: 50%;
+        margin-left: -500px;
+        top: 25%;
+    }
+
+    .newsletter .newsletter-form{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    #close-newsletter{
+        margin-left: 900px;
+        margin-top: 50px;
+        width: 5.33%;
+        max-width: 30px;
+        cursor: pointer;
+    
+    }
+    
+    #newsletter-title{
+        padding-left: 40px;
+        padding-bottom: 50px;
+        margin: 0px;
+        font: normal normal normal 45px/41px Raleway;
+    }
+    
+    #newsletter-input{
+        width: 80%;
+        margin-left: 40px;
+    }
+
 
     .mobile-bar{
         display: none;
