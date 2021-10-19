@@ -69,50 +69,79 @@ var inputName = document.getElementById("inputName");
 var inputMail = document.getElementById("inputMail");
 var formButton = document.getElementById("form-button");
 var checkBox = document.getElementById("check-box");
-var validName = false;
-var validMail = false;
-var validCheck = false;
+var myForm = document.getElementById("my-form")
 
-var personalData = {
-    name: '',
-    mail: '',
+//Function get objdata
+function getPersonalData() {
+    return {
+        'name': inputName.value,
+        'mail': inputMail.value
+    }
+    
 }
-
+//function to check name is all string
 function isLetter(myString){
     return /[a-zA-Z]/.test(myString);
 }
 
+//function to check email is valid
 function validateEmail(myMail){
     const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     return reg.test(myMail);
 }
 
+//function validation form
 function formValidation() {
+    var allValid = true;
     //IF statement for name
     if(typeof inputName.value == 'string' && (isLetter(inputName.value) && (inputName.value.length >= 2 && inputName.value.length < 100))){
         inputName.style.borderColor = 'green';
-        validName = true;
+
     }else{
         inputName.style.borderColor = 'red';
-        window.alert('Please, enter a valid name.')
-        validName = false;
+        allValid = false;
     };
     //IF statement for mail
     if(validateEmail(inputMail.value)){
         inputMail.style.borderColor = 'green';
-        validMail = true;
+
     }else{
         inputMail.style.borderColor = 'red';
-        window.alert('Please, enter a valid mail.')
-        validMail = false;
+        allValid = false;
     };
     //IF statement for checkbox
-    if(checkBox.checked){
-        validCheck = true;
-    }else{
+    if(!checkBox.checked){
         window.alert('Check the conditions');
         validCheck = false;
+    };
+    if(allValid === true){
+        return true;
+    }
+    return false;
+    
+}
+
+//function fetch() data
+function send() {
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify(getPersonalData()),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+}
+
+//function Event form
+function handleFormSubmit(event) {
+    event.preventDefault();
+    const isValid = formValidation();
+    if (isValid){
+        send();
     }
 }
 
-formButton.addEventListener('click',formValidation);
+myForm.addEventListener('submit',handleFormSubmit);
+
