@@ -77,12 +77,12 @@ body section, article{
 
 #newsletter-title{
     padding-left: 10px;
+    max-width: none;
 }
 
 #newsletter-input{
     width: 80%;
     margin-left: 10px;
-    margin-bottom: 42px;
     border: none;
     border-bottom: 1px solid #95989A;
     padding: 5px 0;
@@ -93,6 +93,25 @@ body section, article{
     outline: none;
     border-color: #08A6E4;
 }
+
+#news-button{
+    display: flex;
+    margin-left: 125px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height: 30px;
+    font: normal normal bold 13px/18px 'Open Sans';
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background: #08A6E4 0% 0% no-repeat padding-box;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+}
+
 
 .mobile-bar{
     display: flex;
@@ -1101,6 +1120,14 @@ img{
         margin-left: 40px;
     }
 
+    #news-button{
+        margin-top: 45px;
+        margin-bottom: none;
+        margin-left: 390px;
+        width: 200px;
+        height: 70px;
+        font: normal normal bold 23px/18px 'Open Sans';
+    }
 
     .mobile-bar{
         display: none;
