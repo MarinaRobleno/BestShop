@@ -40,7 +40,13 @@ body section, article{
     border: none;
     cursor: pointer;
     background-color: none;
+    animation: fadeIn 1s;
 }
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
 
 .newsletter{
     display: none;
@@ -59,13 +65,9 @@ body section, article{
 
 .newsletter--visible{
     display: block;
-    animation: newsLetter 0ms linear;
+    animation: fadeIn 1s;
 }
 
-@keyframes displayNewsletter{
-    0% {top: 0;}
-    100% {top: 35%;}
-}
 
 .newsletter .newsletter-form{
     display: flex;
