@@ -43,7 +43,7 @@ body section, article{
 }
 
 .newsletter{
-
+    /*display: none;*/
     position: fixed;
     left: 50%;
     margin-left: -180px;
@@ -55,8 +55,16 @@ body section, article{
     border: 2px solid #08A6E4;
     font: normal normal normal 25px/41px Raleway;
     box-shadow: 5px 10px 14px #07ACE629;
-    
+}
 
+.newsletter--visible{
+    display: block;
+    animation: newsLetter 200ms linear;
+}
+
+@keyframes displayNewsletter{
+    0% {top: 0;}
+    100% {top: 35%;}
 }
 
 .newsletter .newsletter-form{

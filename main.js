@@ -155,3 +155,43 @@ function handleFormSubmit(event) {
 myForm.addEventListener('submit',handleFormSubmit);
 
 //Newsletter area
+ //FUNCION PARA DISPLAY
+
+var newsMail = document.getElementById('newsletter-input');
+var newsButton = document.getElementById('news-button');
+var newsForm = document.getElementById('newsletter-form');
+
+function getNewsData() {
+    return {
+        'mail': newsMail.value
+    }    
+}
+
+function sendNews() {
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify(getNewsData()),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+}
+
+function validateNews (){
+    if(validateEmail(newsMail.value)){
+        return true;
+    }
+    redBorder(newsMail);
+    return false;
+}
+
+function submitNewsletter(event) {
+    event.preventDefault();
+    const newsValid = validateNews();
+    if (newsValid){
+        sendNews();
+    }
+}
+newsForm.addEventListener('submit',submitNewsletter);
