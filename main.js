@@ -73,12 +73,17 @@ var validName = false;
 var validMail = false;
 var validCheck = false;
 
+var personalData = {
+    name: '',
+    mail: '',
+}
+
 function isLetter(myString){
     return /[a-zA-Z]/.test(myString);
 }
 
 function validateEmail(myMail){
-    const reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     return reg.test(myMail);
 }
 
@@ -89,14 +94,16 @@ function formValidation() {
         validName = true;
     }else{
         inputName.style.borderColor = 'red';
+        window.alert('Please, enter a valid name.')
         validName = false;
     };
     //IF statement for mail
-    if(validateEmail(inputMail)){
+    if(validateEmail(inputMail.value)){
         inputMail.style.borderColor = 'green';
         validMail = true;
     }else{
         inputMail.style.borderColor = 'red';
+        window.alert('Please, enter a valid mail.')
         validMail = false;
     };
     //IF statement for checkbox
