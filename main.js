@@ -68,16 +68,43 @@ arrowTop.addEventListener("click",returnToTop);
 var inputName = document.getElementById("inputName");
 var inputMail = document.getElementById("inputMail");
 var formButton = document.getElementById("form-button");
+var checkBox = document.getElementById("check-box");
+var validName = false;
+var validMail = false;
+var validCheck = false;
 
-function hasNumber(myString){
-    return /\d/.test(myString);
+function isLetter(myString){
+    return /[a-zA-Z]/.test(myString);
+}
+
+function validateEmail(myMail){
+    const reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return reg.test(myMail);
 }
 
 function formValidation() {
-    if(typeof inputName.value == 'string' && (!hasNumber(inputName.value) && (inputName.value.length >= 2 && inputName.value.length < 100))){
-        inputMail.value = 'bien';
+    //IF statement for name
+    if(typeof inputName.value == 'string' && (isLetter(inputName.value) && (inputName.value.length >= 2 && inputName.value.length < 100))){
+        inputName.style.borderColor = 'green';
+        validName = true;
     }else{
-        inputMail.value = 'mal';
+        inputName.style.borderColor = 'red';
+        validName = false;
+    };
+    //IF statement for mail
+    if(validateEmail(inputMail)){
+        inputMail.style.borderColor = 'green';
+        validMail = true;
+    }else{
+        inputMail.style.borderColor = 'red';
+        validMail = false;
+    };
+    //IF statement for checkbox
+    if(checkBox.checked){
+        validCheck = true;
+    }else{
+        window.alert('Check the conditions');
+        validCheck = false;
     }
 }
 
