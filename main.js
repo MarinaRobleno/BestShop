@@ -90,23 +90,32 @@ function validateEmail(myMail){
     return reg.test(myMail);
 }
 
+//function for red and green border
+function redBorder(element){
+    element.style.borderColor = 'red';
+}
+
+function greenBorder(element){
+    element.style.borderColor = 'green';
+}
+
 //function validation form
 function formValidation() {
     var allValid = true;
     //IF statement for name
     if(typeof inputName.value == 'string' && (isLetter(inputName.value) && (inputName.value.length >= 2 && inputName.value.length < 100))){
-        inputName.style.borderColor = 'green';
+        greenBorder(inputName);
 
     }else{
-        inputName.style.borderColor = 'red';
+        redBorder(inputName);
         allValid = false;
     };
     //IF statement for mail
     if(validateEmail(inputMail.value)){
-        inputMail.style.borderColor = 'green';
+        greenBorder(inputMail);
 
     }else{
-        inputMail.style.borderColor = 'red';
+        redBorder(inputMail);
         allValid = false;
     };
     //IF statement for checkbox
@@ -145,3 +154,4 @@ function handleFormSubmit(event) {
 
 myForm.addEventListener('submit',handleFormSubmit);
 
+//Newsletter area
