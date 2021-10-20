@@ -265,8 +265,8 @@ async function currency(){
     }
 
     select.addEventListener('change', ()=>{
-        professionalPrice.textContent = (professionalPriceValue * euros[select.value]).toFixed(2); 
-        premiumPrice.textContent = (premiumPriceValue * euros[select.value]).toFixed(2); 
+        professionalPrice.textContent = (professionalPriceValue * euros[select.value]).toFixed(1); 
+        premiumPrice.textContent = (premiumPriceValue * euros[select.value]).toFixed(1); 
 
     });  
 };

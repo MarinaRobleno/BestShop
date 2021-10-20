@@ -1380,6 +1380,11 @@ select:focus{
     .pricing-title{
         padding-top: 100px;
     }
+
+    #coin-icon{
+        display: none;
+    }
+    
     .pricing{
         display: flex;
         align-items: center;
