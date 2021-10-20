@@ -24,7 +24,7 @@ closeButton.addEventListener('click',openDropdown);
 let percentage = document.getElementById("percentage");
 let originalTitle = document.title;
 let arrowTop = document.getElementById("return-to-top");
-let under25 = false;
+let scrollPercentRoundedValue = 0;
 
 
 function getPercentage() {
@@ -33,6 +33,7 @@ function getPercentage() {
     let winHeight = window.innerHeight;
     let scrollPercent = scrollTop / (docHeight - winHeight);
     let scrollPercentRounded = Math.round(scrollPercent * 100);
+    scrollPercentRoundedValue = scrollPercentRounded;
     percentage.textContent = scrollPercentRounded + '%';
     if(scrollPercentRounded != 0){
         arrowTop.style.display = 'block';
@@ -48,8 +49,8 @@ function getPercentage() {
         arrowTop.style.bottom = '5px';
     };
     if(scrollPercentRounded >= 25){
-        under25 = true;
-    }
+        over25 = true;
+    }over25 = false;
 
 }
 
@@ -170,12 +171,19 @@ function newsDisplayTrue() {
     news.classList.add('newsletter--visible');
 }
 
-function newsAppear(){
-    newsHidden = false;
-    if(under25){
-        newsDisplayTrue; //No va
+//function: makes popup appear by time
+function newsTimeAppear(){
+    if (newsHidden){
+        setTimeout(newsDisplayTrue, 5000);
+        newsHidden = false;
+    }    
+}
+ //Function: makes popup appear when scrolling
+function newsScrollAppear(){
+    if (scrollPercentRoundedValue >= 25){
+        newsDisplayTrue;
+        newsHidden = false;
     }
-    setTimeout(newsDisplayTrue, 5000);
 }
 
  function closeNewsletter(){
@@ -185,7 +193,9 @@ function newsAppear(){
          newsHidden = true;
      }
  }
- newsAppear();
+ 
+ document.addEventListener('scroll',newsScrollAppear);
+ newsTimeAppear();
  closeNewsButton.addEventListener('click',closeNewsletter)
 
  
@@ -230,3 +240,34 @@ function submitNewsletter(event) {
     }
 }
 newsForm.addEventListener('submit',submitNewsletter);
+
+//Currency API
+var select = document.querySelector('select');
+var professionalPrice = document.getElementById('professional-price');
+var professionalPriceValue = Number(document.getElementById('professional-price').textContent);
+var premiumPrice = document.getElementById('premium-price');
+var premiumPriceValue = Number(document.getElementById('premium-price').textContent);
+var API_URL = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json';
+
+
+async function currency(){
+    const res = await fetch(API_URL);
+    const data = await res.json();
+    //console.log(data['eur']);
+    const arrKeys = Object.keys(data['eur']);
+    const euros = data['eur'];
+    console.log(euros);
+    for(let i=0; i<arrKeys.length; i++){
+        var option = document.createElement('option');
+        option.value = arrKeys[i];
+        option.text = arrKeys[i];
+        select.appendChild(option);
+    }
+
+    select.addEventListener('change', ()=>{
+        professionalPrice.textContent = (professionalPriceValue * euros[select.value]).toFixed(2); 
+        premiumPrice.textContent = (premiumPriceValue * euros[select.value]).toFixed(2); 
+
+    });  
+};
+currency();
