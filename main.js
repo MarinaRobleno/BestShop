@@ -26,7 +26,6 @@ let originalTitle = document.title;
 let arrowTop = document.getElementById("return-to-top");
 let scrollPercentRoundedValue = 0;
 
-
 function getPercentage() {
     let scrollTop = window.scrollY;
     let docHeight = document.body.offsetHeight;
@@ -48,10 +47,6 @@ function getPercentage() {
         percentage.style.bottom = '5px';
         arrowTop.style.bottom = '5px';
     };
-    if(scrollPercentRounded >= 25){
-        over25 = true;
-    }over25 = false;
-
 }
 
 window.addEventListener('scroll',getPercentage);
@@ -138,10 +133,10 @@ function formValidation() {
 }
 
 //function fetch() data
-function send() {
+function send(info) {
     fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
-        body: JSON.stringify(getPersonalData()),
+        body: JSON.stringify(info),
         headers: {
           'Content-type': 'application/json; charset=UTF-8',
         },
@@ -155,17 +150,17 @@ function handleFormSubmit(event) {
     event.preventDefault();
     const isValid = formValidation();
     if (isValid){
-        send();
+        send(getPersonalData());
     }
 }
 
 myForm.addEventListener('submit',handleFormSubmit);
 
 //Newsletter area
- //FUNCION PARA DISPLAY
- var news = document.getElementById("newsletter")
- var closeNewsButton = document.getElementById('close-newsletter');
- var newsHidden = true;
+
+var news = document.getElementById("newsletter")
+var closeNewsButton = document.getElementById('close-newsletter');
+var newsHidden = true;
 
 function newsDisplayTrue() {
     news.classList.add('newsletter--visible');
@@ -179,14 +174,15 @@ function newsTimeAppear(){
     }    
 }
  //Function: makes popup appear when scrolling
+
 function newsScrollAppear(){
     if (scrollPercentRoundedValue >= 25){
-        newsDisplayTrue;
+        newsDisplayTrue();
         newsHidden = false;
     }
 }
 
- function closeNewsletter(){
+function closeNewsletter(){
      if (!newsHidden){
          news.style.display = 'none';
          news.classList.remove('newsletter--visible');
@@ -194,11 +190,10 @@ function newsScrollAppear(){
      }
  }
  
- document.addEventListener('scroll',newsScrollAppear);
- newsTimeAppear();
- closeNewsButton.addEventListener('click',closeNewsletter)
+window.addEventListener('scroll',newsScrollAppear);
+newsTimeAppear();
+closeNewsButton.addEventListener('click',closeNewsletter)
 
- 
 
 //Function newsletter
 var newsMail = document.getElementById('newsletter-input');
@@ -209,18 +204,6 @@ function getNewsData() {
     return {
         'mail': newsMail.value
     }    
-}
-
-function sendNews() {
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-        method: 'POST',
-        body: JSON.stringify(getNewsData()),
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
-      })
-        .then((response) => response.json())
-        .then((json) => console.log(json));
 }
 
 function validateNews (){
@@ -235,7 +218,7 @@ function submitNewsletter(event) {
     event.preventDefault();
     const newsValid = validateNews();
     if (newsValid){
-        sendNews();
+        send(getNewsData());
         closeNewsletter();
     }
 }
@@ -256,7 +239,7 @@ async function currency(){
     //console.log(data['eur']);
     const arrKeys = Object.keys(data['eur']);
     const euros = data['eur'];
-    console.log(euros);
+    //console.log(euros);
     for(let i=0; i<arrKeys.length; i++){
         var option = document.createElement('option');
         option.value = arrKeys[i];
