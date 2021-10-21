@@ -850,8 +850,7 @@ select:focus{
     cursor: pointer;
 }
 
-#slider{
-    display: block;
+#slider-box{
     position: relative;
     width: 300px;
     left: 50%;
@@ -868,8 +867,7 @@ select:focus{
 
 .left-right{
     position: relative;
-    border: 2px solid #08A6E4;
-    border-radius: 50%;
+
 }
 
 .left-right:hover{
@@ -884,24 +882,12 @@ select:focus{
 
 #right{
     left: 810%;
-    top: -32px;
+    top: -33px;
 }
 
-#slider-image1{
-    display: block;
-}
-
-#slider-image2{
+.img-arr{
     display: none;
-}
-
-#slider-image3{
-    display: none;
-}
-
-.slider-image--visible{
-    display: block;
-}
+}  
 
 .questions{
     display: block;
@@ -1554,10 +1540,24 @@ select:focus{
         left: 50%;
     }
 
-    #slider{
+    #slider-box{
         width: 1000px;
         margin-top: 70px;
         margin-left: -500px;
+    }
+
+    .left-right{
+        width: 80px;
+        max-width: none;
+    }
+
+    #left{
+        top: 200px;
+    }
+
+    #right{
+        top: 117px;
+        left: 897px;
     }
 
     .fullscreen-questions{

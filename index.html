@@ -161,15 +161,21 @@
             <button type = "button" class = "pricing-button">Begin</button>
         </section>
     </article> 
-    <div id="slider">
+    <div id="slider-box">
         <div id="left-right">
-            <img id="left" class="left-right" src="Images/slide-left.png"/>
-            <img id="right" class="left-right" src="Images/slide-right.png"/>
+            <img id="left" class="left-right" src="Images/slide-left.png" onclick="plusSlides(-1)"/>
+            <img id="right" class="left-right" src="Images/slide-right.png" onclick="plusSlides(1)"/>
         </div>
-        <img id="slider-image1" src="Images/iso-republic-waves-01.jpg"/>
-        <img id="slider-image2" src="Images/negative-space-ocean-female-surfer.jpg"/>
-        <img id="slider-image3" src="Images/negative-space-ocean-sunset-horizon.jpg"/>
-    </div> 
+        <div class="img-arr">
+            <img src="Images/iso-republic-waves-01.jpg"/>
+        </div>
+        <div class="img-arr">
+            <img src="Images/negative-space-ocean-female-surfer.jpg"/>
+        </div>
+        <div class="img-arr">
+            <img src="Images/negative-space-ocean-sunset-horizon.jpg"/>    
+        </div> 
+    </div>
     <div class = "fullscreen-questions">
         <article class = "questions">
             <section class = "questions-text">
