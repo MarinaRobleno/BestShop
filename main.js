@@ -286,31 +286,33 @@ let imgArr = document.getElementsByClassName('img-arr');
 class Slider {
     constructor(slider){
         this.slider = slider;
-        this.slideIndex = 1
+        this.position = 0;
+
     }
-    get finalSlider(){
-        this.sliding(this.slideIndex);
+    sliding(){
+        this.slider[this.position].style.display = 'block';
     }
 
-    plusSlides(n){
-        this.sliding(this.slideIndex + n);
+    previous(){
+        this.slider[this.position].style.display = 'none';
+        this.position -= 1;
+        if(this.position < 0){
+            this.position = 2;
+        }
+        this.sliding();
     }
 
-    sliding(n){
-        if (n>this.slider.length){
-            this.slideIndex = 1
+    next(){
+        this.slider[this.position].style.display = 'none';
+        this.position += 1;
+        if (this.position > 2){
+            this.position = 0;
         }
-        if(n<1){
-            this.slideIndex = this.slider.length;
-        }
-        for (let i=0; i<this.slider.length; i++){
-            this.slider[i].style.display = 'none';
-        }
-        this.slider[this.slideIndex-1].style.display = 'block';
+        this.sliding();
     }
 }
-
 const slider = new Slider(imgArr);
-slider.finalSlider;
+slider.sliding();
+
 
 
