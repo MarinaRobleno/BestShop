@@ -257,31 +257,7 @@ currency();
 
 //Slider class
 
-//Functional slider:
-
-/*
-let slideIndex = 1;
-sliding(slideIndex);
-
-function plusSlides(n) {
-  sliding(slideIndex += n);
-}
-
-function sliding(n){
-    let imgArr = document.getElementsByClassName('img-arr');
-    if (n>imgArr.length){
-        slideIndex = 1
-    }
-    if(n<1){
-        slideIndex = imgArr.length;
-    }
-    for (let i=0; i<imgArr.length; i++){
-        imgArr[i].style.display = 'none';
-    }
-    imgArr[slideIndex-1].style.display = 'block';
-}*/
-
-let imgArr = document.getElementsByClassName('img-arr');
+let imgArray = document.getElementsByClassName('img-arr');
 
 class Slider {
     constructor(slider){
@@ -297,7 +273,7 @@ class Slider {
         this.slider[this.position].style.display = 'none';
         this.position -= 1;
         if(this.position < 0){
-            this.position = 2;
+            this.position = this.slider.length-1;
         }
         this.sliding();
     }
@@ -305,13 +281,13 @@ class Slider {
     next(){
         this.slider[this.position].style.display = 'none';
         this.position += 1;
-        if (this.position > 2){
+        if (this.position > this.slider.length-1){
             this.position = 0;
         }
         this.sliding();
     }
 }
-const slider = new Slider(imgArr);
+const slider = new Slider(imgArray);
 slider.sliding();
 
 

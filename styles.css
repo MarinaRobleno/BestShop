@@ -853,6 +853,7 @@ select:focus{
 #slider-box{
     position: relative;
     width: 300px;
+    height: 201px;
     left: 50%;
     margin-top: 40px;
     margin-left: -150px;
@@ -871,6 +872,9 @@ select:focus{
 }
 
 .left-right:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -887,7 +891,8 @@ select:focus{
 
 .img-arr{
     display: none;
-}  
+    animation: fadeIn 1s;
+}
 
 .questions{
     display: block;
@@ -1542,6 +1547,7 @@ select:focus{
 
     #slider-box{
         width: 1000px;
+        height: 668px;
         margin-top: 70px;
         margin-left: -500px;
     }
