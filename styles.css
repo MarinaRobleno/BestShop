@@ -850,6 +850,59 @@ select:focus{
     cursor: pointer;
 }
 
+#slider{
+    display: block;
+    position: relative;
+    width: 300px;
+    left: 50%;
+    margin-top: 40px;
+    margin-left: -150px;
+    border: 2px solid #08A6E4;
+}
+
+#left-right{
+    position: absolute;
+    width: 30px;
+
+}
+
+.left-right{
+    position: relative;
+    border: 2px solid #08A6E4;
+    border-radius: 50%;
+}
+
+.left-right:hover{
+    cursor: pointer;
+}
+
+#left{
+    left: 100%;
+    margin-top: 85px;
+    margin-left: -10px;
+}
+
+#right{
+    left: 810%;
+    top: -32px;
+}
+
+#slider-image1{
+    display: block;
+}
+
+#slider-image2{
+    display: none;
+}
+
+#slider-image3{
+    display: none;
+}
+
+.slider-image--visible{
+    display: block;
+}
+
 .questions{
     display: block;
     text-align: left;
@@ -1499,6 +1552,12 @@ select:focus{
         margin-bottom: -28px;
         bottom: 0;
         left: 50%;
+    }
+
+    #slider{
+        width: 1000px;
+        margin-top: 70px;
+        margin-left: -500px;
     }
 
     .fullscreen-questions{
