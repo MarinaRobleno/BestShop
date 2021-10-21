@@ -52,7 +52,7 @@ function getPercentage() {
 window.addEventListener('scroll',getPercentage);
 
 //Return to top function
-var delay = 200;
+const delay = 200;
 
 function returnToTop() {
     setTimeout(function () {
@@ -67,11 +67,11 @@ function returnToTop() {
 arrowTop.addEventListener("click",returnToTop);
 
 //Form function
-var inputName = document.getElementById("inputName");
-var inputMail = document.getElementById("inputMail");
-var formButton = document.getElementById("form-button");
-var checkBox = document.getElementById("check-box");
-var myForm = document.getElementById("my-form")
+let inputName = document.getElementById("inputName");
+let inputMail = document.getElementById("inputMail");
+let formButton = document.getElementById("form-button");
+let checkBox = document.getElementById("check-box");
+let myForm = document.getElementById("my-form")
 
 //Function get objdata
 function getPersonalData() {
@@ -103,7 +103,7 @@ function greenBorder(element){
 
 //function validation form
 function formValidation() {
-    var allValid = true;
+    let allValid = true;
     //IF statement for name
     if(typeof inputName.value == 'string' && (isLetter(inputName.value) && (inputName.value.length >= 2 && inputName.value.length < 100))){
         greenBorder(inputName);
@@ -158,9 +158,9 @@ myForm.addEventListener('submit',handleFormSubmit);
 
 //Newsletter area
 
-var news = document.getElementById("newsletter")
-var closeNewsButton = document.getElementById('close-newsletter');
-var newsHidden = true;
+let news = document.getElementById("newsletter")
+let closeNewsButton = document.getElementById('close-newsletter');
+let newsHidden = true;
 
 function newsDisplayTrue() {
     news.classList.add('newsletter--visible');
@@ -196,9 +196,9 @@ closeNewsButton.addEventListener('click',closeNewsletter)
 
 
 //Function newsletter
-var newsMail = document.getElementById('newsletter-input');
-var newsButton = document.getElementById('news-button');
-var newsForm = document.getElementById('newsletter-form');
+let newsMail = document.getElementById('newsletter-input');
+let newsButton = document.getElementById('news-button');
+let newsForm = document.getElementById('newsletter-form');
 
 function getNewsData() {
     return {
@@ -225,12 +225,12 @@ function submitNewsletter(event) {
 newsForm.addEventListener('submit',submitNewsletter);
 
 //Currency API
-var select = document.querySelector('select');
-var professionalPrice = document.getElementById('professional-price');
-var professionalPriceValue = Number(document.getElementById('professional-price').textContent);
-var premiumPrice = document.getElementById('premium-price');
-var premiumPriceValue = Number(document.getElementById('premium-price').textContent);
-var API_URL = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json';
+let select = document.querySelector('select');
+let professionalPrice = document.getElementById('professional-price');
+let professionalPriceValue = Number(document.getElementById('professional-price').textContent);
+let premiumPrice = document.getElementById('premium-price');
+let premiumPriceValue = Number(document.getElementById('premium-price').textContent);
+const API_URL = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json';
 
 
 async function currency(){
