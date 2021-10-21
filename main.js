@@ -257,13 +257,12 @@ currency();
 
 //Slider class
 
-const left = document.getElementById("left");
-const right = document.getElementById("right");
+//Functional slider:
 
+/*
 let slideIndex = 1;
 sliding(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   sliding(slideIndex += n);
 }
@@ -280,5 +279,38 @@ function sliding(n){
         imgArr[i].style.display = 'none';
     }
     imgArr[slideIndex-1].style.display = 'block';
+}*/
+
+let imgArr = document.getElementsByClassName('img-arr');
+
+class Slider {
+    constructor(slider){
+        this.slider = slider;
+        this.slideIndex = 1
+    }
+    get finalSlider(){
+        this.sliding(this.slideIndex);
+    }
+
+    plusSlides(n){
+        this.sliding(this.slideIndex + n);
+    }
+
+    sliding(n){
+        if (n>this.slider.length){
+            this.slideIndex = 1
+        }
+        if(n<1){
+            this.slideIndex = this.slider.length;
+        }
+        for (let i=0; i<this.slider.length; i++){
+            this.slider[i].style.display = 'none';
+        }
+        this.slider[this.slideIndex-1].style.display = 'block';
+    }
 }
+
+const slider = new Slider(imgArr);
+slider.finalSlider;
+
 
